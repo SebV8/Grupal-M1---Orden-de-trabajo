@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link Style CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assent/style.css">
     <!-- Bootstrap CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Orden de trabajo</title>
@@ -23,7 +23,7 @@
 
             <div class="col-2 my-2 text-center">
                 <figure class="figure" style="width: 6rem; padding-top: 1rem;">
-                    <img src="logo.svg" class="figure-img img-fluid rounded" alt="logo">
+                    <img src="img/logo.svg" class="figure-img img-fluid rounded" alt="logo">
                 </figure>
             </div>
             <div class="col-5 my-2 text-end">
@@ -49,7 +49,7 @@
                     <label for="text" class="form-label">Rut:</label>
                     <input type="number" id="rut" required placeholder="20776569" class="form col-5" onKeyPress="if(this.value.length==8) return false;"/>
                     <label for="text" class="form-label">-</label>
-                    <input type="text" id="dverficador" required placeholder="4" class="form col-1" onkeyup="this.value=Numeros(this.value)"/>
+                    <input type="text" id="dverficador" required placeholder="4" maxlength="1" class="form col-1" onkeyup="this.value=Numeros(this.value)"/>
                 </div>
 
                 <div class="form-control-sm"> 
@@ -78,7 +78,7 @@
                 <h5>Datos del vehiculo</h5>
                 <div class="form-control-sm col-6"> 
                     <label for="text" class="form-label">Tipo:</label>
-                    <select class=" form-select-sm form" aria-label="form-select-sm example" style="background-image: linear-gradient(rgb(207, 204, 204),rgb(143, 141, 141)); border-radius: 0%; border: 2px solid rgb(66, 66, 66);">
+                    <select class=" form-select-sm form" aria-label="form-select-sm example" style="background-image: linear-gradient(rgb(35, 137, 196), rgb(207, 204, 204)); border-radius: 0%; border: 2px solid rgb(66, 66, 66);">
                         <option selected>Tipo de vehiculo</option>
                         <option value="1">Furgon</option>
                         <option value="2">Automovil</option>
@@ -152,7 +152,7 @@
         <div class="row">
             <div class="col-md-12" style="border: solid 2px grey;">
                 <label for="textarea" class="form-label">Observaciones: </label>
-                <textarea class="form-control my-2" style="background-image: linear-gradient(rgb(207, 204, 204),rgb(143, 141, 141)); color: rgb(59, 58, 58); font-size: .9rem; font-family: 'Garamond, serif'; border: 1px grey solid;" id="textarea" rows="3" style="border: 0px;"></textarea>
+                <textarea class="form-control my-2" style="background-image: linear-gradient(rgb(35, 137, 196), rgb(207, 204, 204)); color: rgb(59, 58, 58); font-size: .9rem; font-family: 'Garamond, serif'; border: 1px grey solid;" id="textarea" rows="3" style="border: 0px;"></textarea>
             </div>
         </div>
 
@@ -160,7 +160,7 @@
             <div class="col-md-6" style="border: solid 2px grey;">
                 <h6 class="my-2">Encargado del servicio: </h6>
                 <div class="form-control-sm my-3"> 
-                    <select class=" form-select-sm form col-6" aria-label="form-select-sm example" style="background: linear-gradient(rgb(207, 204, 204),rgb(143, 141, 141)); color: rgb(59, 58, 58); border-radius: 0%; border: 2px solid rgb(66, 66, 66);">
+                    <select class=" form-select-sm form col-6" aria-label="form-select-sm example" style="background: linear-gradient(rgb(35, 137, 196), rgb(207, 204, 204)); color: rgb(59, 58, 58); border-radius: 0%; border: 2px solid rgb(66, 66, 66);">
                         <option selected>Seleccione Encargado</option>
                         <option value="1">Felipe Miranda</option>
                         <option value="2">Matias Rodriguez</option>
@@ -187,7 +187,7 @@
 
 
     <!-- App JS -->
-    <script src="app.js"></script>
+    <script src="assent/app.js"></script>
     <!-- Boostrap JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
