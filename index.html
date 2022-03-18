@@ -40,6 +40,7 @@
         <h3 class="text-center my-4">(Resguardo deposito de vehiculo)</h3>
     </div>
     <!-- Entrada de datos -->
+    <form action="">
     <div class="container">
         <div class="row">
             <!-- Datos Cliente -->
@@ -101,6 +102,15 @@
                 <div class="form-control-sm"> 
                     <label for="number" class="form-label">Año</label>
                     <input type="number" id="año" placeholder="2018" class="form col-5"/>
+                </div>
+
+                <div class="form-control-sm col-12"> 
+                    <label for="text" class="form-label">Revision tecnica al dia:</label>
+                    <select class=" form-select-sm form" aria-label="form-select-sm example" style="background-image: linear-gradient(rgb(35, 137, 196), rgb(207, 204, 204)); border-radius: 0%; border: 2px solid rgb(66, 66, 66);">
+                        <option selected>Seleccione</option>
+                        <option value="1">Si</option>
+                        <option value="2">No</option>
+                    </select>
                 </div>
 
                 <div class="form-control-sm"> 
@@ -181,6 +191,7 @@
             <button type="button" class="btn btn-outline-secondary">Cancel</button>
         </div>
     </div>
+</form>
 
 
 
